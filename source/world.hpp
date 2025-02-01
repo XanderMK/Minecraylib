@@ -4,6 +4,7 @@
 #include <mutex>
 #include <iostream>
 #include <queue>
+#include <memory>
 
 #include "chunk.hpp"
 #include "resourceloader.hpp"
@@ -36,11 +37,6 @@ class World {
             >>
         >> chunks;
         Vector3 minChunkPos{}, maxChunkPos{};
-
-        std::vector<std::thread> threads;
-        std::queue<std::function<>> taskQueue{};
-        std::mutex taskQueueMutex{};
-        void CheckThreads();
 
         Material opaqueChunkMat {};
         Material transparentChunkMat {};

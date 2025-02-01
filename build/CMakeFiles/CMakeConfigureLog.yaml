@@ -1,0 +1,672 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.12.10-200.fc41.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++-18 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/3.30.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-t9FUNG"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-t9FUNG"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-t9FUNG'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_5d31e
+        [1/2] /usr/bin/clang++-18   -v -MD -MT CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 18.1.8 (Fedora 18.1.8-5.fc41)
+        Target: x86_64-redhat-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Configuration file: /etc/clang18/x86_64-redhat-linux-gnu-clang++.cfg
+        System configuration file directory: /etc/clang18/
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+        Found HIP installation: /usr, version 6.2.41134
+         (in-process)
+         "/usr/lib64/llvm18/bin/clang++" -cc1 -triple x86_64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-t9FUNG -v -fcoverage-compilation-dir=/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-t9FUNG -resource-dir /usr/lib64/llvm18/bin/../../../lib/clang/18 -dependency-file CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /usr/lib64/llvm18/bin/../../../lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-redhat-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14
+         /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux
+         /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward
+         /usr/lib64/llvm18/bin/../../../lib/clang/18/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang++-18  -v -Wl,-v CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5d31e   && :
+        clang version 18.1.8 (Fedora 18.1.8-5.fc41)
+        Target: x86_64-redhat-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Configuration file: /etc/clang18/x86_64-redhat-linux-gnu-clang++.cfg
+        System configuration file directory: /etc/clang18/
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+        Found HIP installation: /usr, version 6.2.41134
+         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5d31e /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+        GNU ld version 2.43.1-5.fc41
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14]
+          add: [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux]
+          add: [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward]
+          add: [/usr/lib64/llvm18/bin/../../../lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux] ==> [/usr/include/c++/14/x86_64-redhat-linux]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib64/llvm18/bin/../../../lib/clang/18/include] ==> [/usr/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/c++/14/x86_64-redhat-linux;/usr/include/c++/14/backward;/usr/lib/clang/18/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-t9FUNG']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja-build -v cmTC_5d31e]
+        ignore line: [[1/2] /usr/bin/clang++-18   -v -MD -MT CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 18.1.8 (Fedora 18.1.8-5.fc41)]
+        ignore line: [Target: x86_64-redhat-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Configuration file: /etc/clang18/x86_64-redhat-linux-gnu-clang++.cfg]
+        ignore line: [System configuration file directory: /etc/clang18/]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found HIP installation: /usr  version 6.2.41134]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib64/llvm18/bin/clang++" -cc1 -triple x86_64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-t9FUNG -v -fcoverage-compilation-dir=/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-t9FUNG -resource-dir /usr/lib64/llvm18/bin/../../../lib/clang/18 -dependency-file CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14 -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward -internal-isystem /usr/lib64/llvm18/bin/../../../lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-redhat-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward]
+        ignore line: [ /usr/lib64/llvm18/bin/../../../lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang++-18  -v -Wl -v CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5d31e   && :]
+        ignore line: [clang version 18.1.8 (Fedora 18.1.8-5.fc41)]
+        ignore line: [Target: x86_64-redhat-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Configuration file: /etc/clang18/x86_64-redhat-linux-gnu-clang++.cfg]
+        ignore line: [System configuration file directory: /etc/clang18/]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found HIP installation: /usr  version 6.2.41134]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5d31e /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5d31e] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o]
+          arg [-L/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu] ==> dir [/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu]
+          arg [-L/usr/bin/../lib/gcc/x86_64-redhat-linux/14] ==> dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+          arg [-L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_5d31e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/14/crtend.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu] ==> [/usr/lib/clang/18/lib/x86_64-redhat-linux-gnu]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14] ==> [/usr/lib/gcc/x86_64-redhat-linux/14]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/14/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/clang/18/lib/x86_64-redhat-linux-gnu;/usr/lib/gcc/x86_64-redhat-linux/14;/usr/lib64;/lib64;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld version 2.43.1-5.fc41
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "build/_deps/raylib-src/CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang-18 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/3.30.5/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "build/_deps/raylib-src/CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-2rTDPQ"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-2rTDPQ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-2rTDPQ'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_00404
+        [1/2] /usr/bin/clang-18   -v -MD -MT CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        clang version 18.1.8 (Fedora 18.1.8-5.fc41)
+        Target: x86_64-redhat-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Configuration file: /etc/clang18/x86_64-redhat-linux-gnu-clang.cfg
+        System configuration file directory: /etc/clang18/
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+        Found HIP installation: /usr, version 6.2.41134
+         (in-process)
+         "/usr/lib64/llvm18/bin/clang-18" -cc1 -triple x86_64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-2rTDPQ -v -fcoverage-compilation-dir=/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-2rTDPQ -resource-dir /usr/lib64/llvm18/bin/../../../lib/clang/18 -dependency-file CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib64/llvm18/bin/../../../lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-redhat-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib64/llvm18/bin/../../../lib/clang/18/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang-18  -v -Wl,-v CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -o cmTC_00404   && :
+        clang version 18.1.8 (Fedora 18.1.8-5.fc41)
+        Target: x86_64-redhat-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Configuration file: /etc/clang18/x86_64-redhat-linux-gnu-clang.cfg
+        System configuration file directory: /etc/clang18/
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+        Found HIP installation: /usr, version 6.2.41134
+         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_00404 /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o
+        GNU ld version 2.43.1-5.fc41
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "build/_deps/raylib-src/CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib64/llvm18/bin/../../../lib/clang/18/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib64/llvm18/bin/../../../lib/clang/18/include] ==> [/usr/lib/clang/18/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/clang/18/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "build/_deps/raylib-src/CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-2rTDPQ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja-build -v cmTC_00404]
+        ignore line: [[1/2] /usr/bin/clang-18   -v -MD -MT CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 18.1.8 (Fedora 18.1.8-5.fc41)]
+        ignore line: [Target: x86_64-redhat-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Configuration file: /etc/clang18/x86_64-redhat-linux-gnu-clang.cfg]
+        ignore line: [System configuration file directory: /etc/clang18/]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found HIP installation: /usr  version 6.2.41134]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib64/llvm18/bin/clang-18" -cc1 -triple x86_64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-2rTDPQ -v -fcoverage-compilation-dir=/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-2rTDPQ -resource-dir /usr/lib64/llvm18/bin/../../../lib/clang/18 -dependency-file CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib64/llvm18/bin/../../../lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-redhat-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../x86_64-redhat-linux/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib64/llvm18/bin/../../../lib/clang/18/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang-18  -v -Wl -v CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -o cmTC_00404   && :]
+        ignore line: [clang version 18.1.8 (Fedora 18.1.8-5.fc41)]
+        ignore line: [Target: x86_64-redhat-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Configuration file: /etc/clang18/x86_64-redhat-linux-gnu-clang.cfg]
+        ignore line: [System configuration file directory: /etc/clang18/]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found HIP installation: /usr  version 6.2.41134]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_00404 /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o -L/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14 -L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_00404] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o]
+          arg [-L/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu] ==> dir [/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu]
+          arg [-L/usr/bin/../lib/gcc/x86_64-redhat-linux/14] ==> dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14]
+          arg [-L/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_00404.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o]
+          arg [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o] ==> obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtbegin.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/crtend.o] ==> [/usr/lib/gcc/x86_64-redhat-linux/14/crtend.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib64/llvm18/bin/../../../lib/clang/18/lib/x86_64-redhat-linux-gnu] ==> [/usr/lib/clang/18/lib/x86_64-redhat-linux-gnu]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14] ==> [/usr/lib/gcc/x86_64-redhat-linux/14]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/14/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/14/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/clang/18/lib/x86_64-redhat-linux-gnu;/usr/lib/gcc/x86_64-redhat-linux/14;/usr/lib64;/lib64;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "build/_deps/raylib-src/CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld version 2.43.1-5.fc41
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "build/_deps/raylib-src/cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
+      - "build/_deps/raylib-src/cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
+      - "build/_deps/raylib-src/CMakeLists.txt:35 (include)"
+    checks:
+      - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-8Ay2In"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-8Ay2In"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_THOSE_TOGGLES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-8Ay2In'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_6faa7
+        [1/2] /usr/bin/clang-18 -DCOMPILER_HAS_THOSE_TOGGLES  -Werror=pointer-arith -MD -MT CMakeFiles/cmTC_6faa7.dir/src.c.o -MF CMakeFiles/cmTC_6faa7.dir/src.c.o.d -o CMakeFiles/cmTC_6faa7.dir/src.c.o -c /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-8Ay2In/src.c
+        [2/2] : && /usr/bin/clang-18   CMakeFiles/cmTC_6faa7.dir/src.c.o -o cmTC_6faa7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-pXFpPx"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-pXFpPx"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/cmake;/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-pXFpPx'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_e13b1
+        [1/2] /usr/bin/clang-18 -DCMAKE_HAVE_LIBC_PTHREAD  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -MD -MT CMakeFiles/cmTC_e13b1.dir/src.c.o -MF CMakeFiles/cmTC_e13b1.dir/src.c.o.d -o CMakeFiles/cmTC_e13b1.dir/src.c.o -c /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-pXFpPx/src.c
+        [2/2] : && /usr/bin/clang-18 -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_e13b1.dir/src.c.o -o cmTC_e13b1   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-fu1iYB"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-fu1iYB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/cmake;/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-fu1iYB'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_56eb0
+        [1/2] /usr/bin/clang-18   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=gnu99 -MD -MT CMakeFiles/cmTC_56eb0.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_56eb0.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_56eb0.dir/CheckFunctionExists.c.o -c /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-fu1iYB/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang-18 -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=XOpenDisplay  CMakeFiles/cmTC_56eb0.dir/CheckFunctionExists.c.o -o cmTC_56eb0  /usr/lib64/libX11.so  /usr/lib64/libXext.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-q80Ahf"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-q80Ahf"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/cmake;/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-q80Ahf'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_c8ad3
+        [1/2] /usr/bin/clang-18   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu99 -MD -MT CMakeFiles/cmTC_c8ad3.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c8ad3.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c8ad3.dir/CheckFunctionExists.c.o -c /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-q80Ahf/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang-18 -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=gethostbyname  CMakeFiles/cmTC_c8ad3.dir/CheckFunctionExists.c.o -o cmTC_c8ad3   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-wByEhD"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-wByEhD"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/cmake;/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-wByEhD'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_5adb3
+        [1/2] /usr/bin/clang-18   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -MD -MT CMakeFiles/cmTC_5adb3.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_5adb3.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_5adb3.dir/CheckFunctionExists.c.o -c /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-wByEhD/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang-18 -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=connect  CMakeFiles/cmTC_5adb3.dir/CheckFunctionExists.c.o -o cmTC_5adb3   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-H3scpb"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-H3scpb"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/cmake;/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-H3scpb'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_353d8
+        [1/2] /usr/bin/clang-18   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=remove -std=gnu99 -MD -MT CMakeFiles/cmTC_353d8.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_353d8.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_353d8.dir/CheckFunctionExists.c.o -c /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-H3scpb/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang-18 -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=remove  CMakeFiles/cmTC_353d8.dir/CheckFunctionExists.c.o -o cmTC_353d8   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt:181 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-jh5cFG"
+      binary: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-jh5cFG"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
+      CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/cmake;/home/xander/Documents/Cpp-Projects/Minecraylib/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-jh5cFG'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_db15b
+        [1/2] /usr/bin/clang-18   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=shmat -std=gnu99 -MD -MT CMakeFiles/cmTC_db15b.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_db15b.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_db15b.dir/CheckFunctionExists.c.o -c /home/xander/Documents/Cpp-Projects/Minecraylib/build/CMakeFiles/CMakeScratch/TryCompile-jh5cFG/CheckFunctionExists.c
+        [2/2] : && /usr/bin/clang-18 -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=shmat  CMakeFiles/cmTC_db15b.dir/CheckFunctionExists.c.o -o cmTC_db15b   && :
+        
+      exitCode: 0
+...

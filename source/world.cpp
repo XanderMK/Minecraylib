@@ -5,16 +5,12 @@
 
 World::World(Camera *player) : music(loader.GetMusic("boss.mp3")), playerPos(&player->position)
 {
+    SetMusicVolume(music, 0.10f);
     PlayMusicStream(music);
 
     auto [x, y, z] = GetChunkPositionAt(*playerPos);
     minChunkPos = Vector3{x + static_cast<float>(-renderDistance)+1, y + static_cast<float>(-renderDistance)+1, z + static_cast<float>(-renderDistance)+1};
     maxChunkPos = Vector3{x + static_cast<float>(renderDistance), y + static_cast<float>(renderDistance), z + static_cast<float>(renderDistance)};
-
-    for (int i = 0; i < 4; i++)
-    {
-        threads.emplace_back(&World::CheckThreads, this);
-    }
 
     for (int i = 0; i < renderDistance * 2; i++)
     {
@@ -61,7 +57,7 @@ void World::Update()
         maxChunkPos = Vector3{playerLastChunk.x + static_cast<float>(renderDistance), playerLastChunk.y + static_cast<float>(renderDistance), playerLastChunk.z + static_cast<float>(renderDistance)};
 
         // Generate new chunks
-        taskQueue.emplace(&World::GenerateChunks);
+        GenerateChunks();
     }
 }
 
@@ -200,22 +196,6 @@ bool World::IsBlockAtCoordsTransparent(const int x, const int y, const int z) co
 {
     const unsigned char block = GetBlockAt(x, y, z);
     return BlockType::Types[block].isTransparent;
-}
-
-void World::CheckThreads()
-{
-    while (true)
-    {
-        if (!(taskQueueMutex.try_lock() && !taskQueue.empty()))
-            continue;
-
-        auto func = taskQueue.front();
-        taskQueue.pop();
-
-        taskQueueMutex.unlock();
-
-        func();
-    }
 }
 
 std::shared_ptr<Chunk> World::GenerateChunk(const Vector3 chunkPos)
