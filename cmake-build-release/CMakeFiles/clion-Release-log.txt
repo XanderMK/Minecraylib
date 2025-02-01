@@ -1,0 +1,35 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/xandermkleiber/CLionProjects/minecraylib -B /Users/xandermkleiber/CLionProjects/minecraylib/cmake-build-release
+-- Populating raylib
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/xandermkleiber/CLionProjects/minecraylib/cmake-build-release/_deps/raylib-subbuild
+[0/7] Performing update step for 'raylib-populate'
+-- Fetching latest from the remote origin
+From https://github.com/raysan5/raylib
+   602583bc..99dfec07  master     -> origin/master
+[1/7] No patch step for 'raylib-populate'
+[3/7] No configure step for 'raylib-populate'
+[4/7] No build step for 'raylib-populate'
+[5/7] No install step for 'raylib-populate'
+[6/7] No test step for 'raylib-populate'
+[7/7] Completed 'raylib-populate'
+-- Testing if -Werror=pointer-arith can be used -- compiles
+-- Testing if -Werror=implicit-function-declaration can be used -- compiles
+-- Testing if -fno-strict-aliasing can be used -- compiles
+-- Using raylib's GLFW
+-- Including Cocoa support
+CMake Warning (dev) at cmake-build-release/_deps/raylib-src/cmake/LibraryConfigurations.cmake:22 (MESSAGE):
+  OpenGL is deprecated starting with macOS 10.14 (Mojave)!
+Call Stack (most recent call first):
+  cmake-build-release/_deps/raylib-src/src/CMakeLists.txt:50 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Audio Backend: miniaudio
+-- Building raylib static library
+-- Generated build type: Release
+-- Compiling with the flags:
+--   PLATFORM=PLATFORM_DESKTOP
+--   GRAPHICS=GRAPHICS_API_OPENGL_33
+-- Configuring done (3.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/xandermkleiber/CLionProjects/minecraylib/cmake-build-release
